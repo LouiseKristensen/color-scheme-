@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <main>
+        <form id="colorGenerator">
+            <input type="color" id="favcolor" name="favcolor" value="#000000">
+            <select name="colorcombos" id="colorcombos">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">monochrome dark</option>
+                <option value="monochrome-light">monochrome light</option>
+                <option value="analogic">analogic</option>
+                <option value="complement">complement</option>
+                <option value="analogic-complement">analogic complement</option>
+                <option value="triad">triad</option>
+                <option value="quad">quad</option>
+            </select>
+            <button type="submit">Get color scheme</button>
+        </form>
+        <section>
+            <div id="colors"></div>
+        </section>
+    </main>
+</body>
+</html>
