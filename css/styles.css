@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: beige;
+    margin: 10rem auto;
+    border-radius: 0.5rem;
+    width: 700px;
+
+    form{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0.5rem;
+
+        button{
+            padding: 0.3rem;
+            background-color: white;
+            border: 1px solid black;
+        }
+    }
+    
+    #colors {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 1rem;
+        justify-content: center;
+        padding: 1rem;
+        margin-top: 3rem;
+
+        .swatch {
+            text-align: center;
+        }
+
+        /* color box */ 
+        .swatch-color {
+            width: 100px;
+            height: 100px;
+            background: var(--bg, #ccc); /* får farven fra JS */
+            border-radius: 6px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        /* hex color */ 
+        .swatch-hex {
+            margin-top: 0.5rem;
+            font-weight: bold;
+            font-size: 0.9rem;
+            cursor: pointer;
+
+            &:hover{
+                color: grey;
+            }
+        }
+
+        
+    }
+}
